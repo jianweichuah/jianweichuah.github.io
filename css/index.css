@@ -1,0 +1,40 @@
+.content {
+	max-width: 480px;
+	padding: 0px 20px;
+	display: block;
+	margin: 10% auto 5%;
+	border: 1px solid #000000;
+	border-radius: 20px;
+	background-color: rgba(0,0,0,0.3);
+	text-align: center;
+	box-shadow: 10px 10px 50px 0px rgba(0,0,0,0.8);
+}
+
+.picture {
+	text-align: center;
+	padding: 5% 0;
+}
+
+/* Rounded avatars */
+.avatar {
+    position: relative;
+
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+
+    -webkit-box-shadow: 0 0 0 3px #fff, 0 0 0 4px #999, 0 2px 5px 4px rgba(0,0,0,.2);
+    -moz-box-shadow: 0 0 0 3px #fff, 0 0 0 4px #999, 0 2px 5px 4px rgba(0,0,0,.2);
+    box-shadow: 0 0 0 3px #fff, 0 0 0 4px #999, 0 2px 5px 4px rgba(0,0,0,.2);
+}
+
+.name {
+	color: white;
+	font-size: 25px;
+	font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+}
+
+.introduction {
+	color: white;
+	font-family: Helvetica, Arial, sans-serif;
+}
