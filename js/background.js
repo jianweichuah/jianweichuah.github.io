@@ -17,7 +17,7 @@ $(function() {
 		]
 	});
 	$.vegas('overlay', {
-		src:'/js/vegas/overlays/01.png'
+		src: tmp + 'js/vegas/overlays/01.png'
 	});
 });
 $(document).ready(function() { 
