@@ -10,7 +10,7 @@ body {
 	max-width: 480px;
 	padding: 0px 20px;
 	display: block;
-	margin: 10% auto 5%;
+	margin: 5% auto 5%;
 	border: 1px solid #000000;
 	border-radius: 20px;
 	background-color: rgba(0,0,0,0.3);
@@ -105,4 +105,13 @@ a {
 a:hover { 
 	color: #ffffff; 
 	-webkit-transition: all 0.2s ease-in-out; 
+}
+
+.footer {
+    color: #cccccc;
+    text-align: center;
+}
+
+.footer p {
+    font-size: 11px;
 }
