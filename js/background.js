@@ -18,7 +18,7 @@ $(function() {
 		preload: true
 	});
 	$.vegas('overlay', {
-		src:'/Users/jchuah/Github/jianweichuah.github.io/js/vegas/overlays/01.png'
+		src:'js/vegas/overlays/01.png'
 	});
 });
 $(document).ready(function() { 
