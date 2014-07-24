@@ -11,6 +11,7 @@
 
 		<link rel="stylesheet" type="text/css" href="js/vegas/jquery.vegas.css"/>
 		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="css/contactform.css"/>
 		<link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
         <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" rel="stylesheet" type="text/css">
 	</head>
@@ -19,6 +20,7 @@
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 		<script type="text/javascript" src="js/vegas/jquery.vegas.min.js"></script>
 		<script type="text/javascript" src="js/background.js"></script>
+		<script type="text/javascript" src="js/contactform.js"></script>
 
 		<div class="content">
 			<div class="picture">
@@ -36,15 +38,31 @@
 				I'm a final year Computer Engineering student at the University of Toronto, a software engineer, a creator, a learner, a geek. I love startup, web design and traveling.
 			</p>
 
+			<!-- Social Bar -->
 			<ul class="social_bar">
 				<li><a href="" class="symbol" title="About Me">circleaboutme</a></li>
 				<li><a href="https://twitter.com/jianweichuah" class="symbol" title="Twitter">circletwitterbird</a></li>
 				<li><a href="https://github.com/jianweichuah" class="symbol" title="Github">circlegithubalt</a></li>
 				<li><a href="https://www.linkedin.com/in/jianweichuah" class="symbol" title="LinkedIn">circlelinkedin</a></li>
-				<li><a href="" class="symbol" title="Contact Me">circleemail</a></li>
+				<li><a id="popup" class="symbol" title="Contact Me" onclick="show_popup()">circleemail</a></li>
 				<li><a href="http://stackoverflow.com/users/1552862/jian" class="symbol" title="StackOverflow">circlestackoverflow</a></li>
 				<li><a href="http://jianweichuah.yelp.com" class="symbol" title="Yelp">circleyelp</a></li>
 			</ul>
+		</div>
+
+		<div id="popup_holder" onclick="check(event)">
+			<div id="popup_contact_form">
+				<img src="images/Close.png" id="close">
+				<!-- the form -->
+				<form action="#" method="post">
+					<h1>Say Hello</h1>
+					<hr>
+					<input type="text" id="name" name="name" placeholder="Name">
+					<input type="text" id="email" name="email" placeholder="Email">
+					<textarea name="message" placeholder="Message"></textarea>
+					<input type="submit" name="submit" value="Send Message">
+				</form>
+			</div>
 		</div>
 
 		<div class="footer">
