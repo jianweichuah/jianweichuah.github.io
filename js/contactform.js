@@ -18,7 +18,7 @@ $(document).ready(function() {
 				var subject = "Message from " + email;
 				$.ajax({
 					type: "POST",
-					url: "secure_email.php",
+					url: "/secure_email.php",
 					dataType: "html"
 				}).done( function(response) {
 					alert("yay!");
