@@ -2,37 +2,29 @@ $(document).ready(function() {
 	$("#send").click(function(e){
 		// Prevent it from submitting the form and refreshing the page
 		e.preventDefault();
+		// First clear the error
+		$("#form_error").html("");
 
 		var name = $("#name").val();
 		var email = $("#email").val();
 		var message = $("#message").val();
 
 		if (name == '' || email == '' || message == '') {
-			alert("Please fill all fields!");   	
+			$("#form_error").html("Please fill in all fields!");
 		} else {
 			// Validate the email.
 			var EMAIL_REGEX = new RegExp("^[\\S]+@[\\S]+\\.[\\S]+$");
 			if (EMAIL_REGEX.test(email) === false) {
-				alert("Please provide a valid email");
+				$("#form_error").html("Please provide a valid email!");
 			} else {
-				var subject = "Message from " + email;
-				$.ajax({
-					type: "POST",
-					url: "/secure_email.php",
-					dataType: "html"
-				}).done( function(response) {
-					alert("yay!");
-				}).fail(function(jqXHR, textStatus) {
-					alert( "Request failed: " + jqXHR.status );
-				});
+				// Append subject 
+				var subject = escape("Hello from " + name);
+				var body = escape(message);
+				// Open up the email client to send the email
+				window.location.href ="mailto:jianweichuah@gmail.com?subject=" + subject + "&body=" + body;
+				// Close the popup!
+				document.getElementById('popup_holder').style.display = "none";
 			}
-			// // Returns successful data submission message when the entered information is stored in database.
-			// $.post("secure_email_code.php",{ name1: name, email1: email, subject1: subject, message1:message},
-			// 			function(data){
-			// 			alert(data);
-			// 			if(data=="Your mail has been sent successfuly ! Thank you for your feedback")
-			// 			$('#form')[0].reset(); //To reset form fields
-			// 			});
 	    }
 	});
 });

@@ -110,3 +110,9 @@ input[type=submit] {
   	background: -moz-linear-gradient(left, gray, black, gray); /* For Firefox 3.6 to 15 */
   	background: linear-gradient(left, gray, black, gray); /* Standard syntax */
 }
+
+.error {
+	color: red;
+	font-size: 12px;
+	float: left;
+}
