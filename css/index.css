@@ -6,16 +6,32 @@ body {
 	text-align: center; 
 }
 
+.first {
+	min-height: 476px;
+	overflow: auto;
+}
+
 .content {
 	max-width: 480px;
 	padding: 0px 20px;
 	display: block;
-	margin: 5% auto 5%;
+	margin: 5% auto 4%;
 	border: 1px solid #000000;
 	border-radius: 20px;
 	background-color: rgba(0,0,0,0.3);
 	text-align: center;
+	vertical-align: center;
 	box-shadow: 10px 10px 50px 0px rgba(0,0,0,0.8);
+}
+
+.more {
+	background: url('http://d4yt8xl9b7in.cloudfront.net/assets/home/scroll-trigger-small@2x-259af61c001f3cd0b3d4fcd9c2f62df0.png');
+	background-size: 26px 16px;
+	width: 26px;
+	height: 16px;
+	display: inline-block;
+	bottom: 50px;
+	cursor: pointer;
 }
 
 .picture {
@@ -108,11 +124,28 @@ a:hover {
 	-webkit-transition: all 0.2s ease-in-out; 
 }
 
+.timeline {
+	background: #f5f5f5;
+	border-top: 2px solid #ddd;
+	box-shadow: inset 10px 10px 10px -10px rgba(0, 0, 0, .1);
+	padding: 25px;
+	position: relative;
+}
+
 .footer {
     color: #cccccc;
     text-align: center;
+    font-size: 11px;
 }
 
-.footer p {
-    font-size: 11px;
+ul.line::before {
+	position: absolute;
+	content: '';
+	width: 2px;
+	left: 50%;
+	margin-left: -1px;
+	display: inline-block;
+	top: 0;
+	bottom: 80px;
+	background: #ddd;
 }

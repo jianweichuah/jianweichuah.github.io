@@ -24,56 +24,77 @@
 		<script type="text/javascript" src="js/vegas/jquery.vegas.min.js"></script>
 		<script type="text/javascript" src="js/background.js"></script>
 		<script type="text/javascript" src="js/contactform.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
 
-		<div class="content">
-			<div class="picture">
-				<img src="images/avatar.jpg" class="avatar" alt="avatar">
-			</div>
-			<div class="name">Jian Wei Chuah</div>
-			<div class="location">
-				<img src="images/Canada.png" title="Current: Toronto, Canada">
-				<img src="images/United-States.png" title="Past: San Francisco, USA">
-				<img src="images/Germany.png" title="Past: Augsburg, Germany">
-				<img src="images/Malaysia.png" title="Past: Penang, Malaysia">
-			</div>
-			<p class="introduction">
-				Hello, nice to meet you! <br> 
-				I'm a final year Computer Engineering student at the University of Toronto, a software engineer, a creator, a learner, a geek. I love startup, web design and traveling.
-			</p>
+		<div class="first">
+			<div class="content">
+				<div class="picture">
+					<img src="images/avatar.jpg" class="avatar" alt="avatar">
+				</div>
+				<div class="name">Jian Wei Chuah</div>
+				<div class="location">
+					<img src="images/Canada.png" title="Current: Toronto, Canada">
+					<img src="images/United-States.png" title="Past: San Francisco, USA">
+					<img src="images/Germany.png" title="Past: Augsburg, Germany">
+					<img src="images/Malaysia.png" title="Past: Penang, Malaysia">
+				</div>
+				<p class="introduction">
+					Hello, nice to meet you! <br> 
+					I'm a final year Computer Engineering student at the University of Toronto, a software engineer, a creator, a learner, a geek. I love startup, web design and traveling.
+				</p>
 
-			<!-- Social Bar -->
-			<ul class="social_bar">
-				<li><a href="docs/JianWeiChuah_Resume.pdf" class="symbol" title="Resume">circleaboutme</a></li>
-				<li><a href="https://twitter.com/jianweichuah" class="symbol" title="Twitter">circletwitterbird</a></li>
-				<li><a href="https://github.com/jianweichuah" class="symbol" title="Github">circlegithubalt</a></li>
-				<li><a href="https://www.linkedin.com/in/jianweichuah" class="symbol" title="LinkedIn">circlelinkedin</a></li>
-				<li><a id="popup" class="symbol" title="Contact Me" onclick="show_popup()">circleemail</a></li>
-				<li><a href="http://stackoverflow.com/users/1552862/jian" class="symbol" title="StackOverflow">circlestackoverflow</a></li>
-				<li><a href="http://jianweichuah.yelp.com" class="symbol" title="Yelp">circleyelp</a></li>
+				<!-- Social Bar -->
+				<ul class="social_bar">
+					<li><a href="docs/JianWeiChuah_Resume.pdf" class="symbol" title="Resume">circleaboutme</a></li>
+					<li><a href="https://twitter.com/jianweichuah" class="symbol" title="Twitter">circletwitterbird</a></li>
+					<li><a href="https://github.com/jianweichuah" class="symbol" title="Github">circlegithubalt</a></li>
+					<li><a href="https://www.linkedin.com/in/jianweichuah" class="symbol" title="LinkedIn">circlelinkedin</a></li>
+					<li><a id="popup" class="symbol" title="Contact Me" onclick="show_popup()">circleemail</a></li>
+					<li><a href="http://stackoverflow.com/users/1552862/jian" class="symbol" title="StackOverflow">circlestackoverflow</a></li>
+					<li><a href="http://jianweichuah.yelp.com" class="symbol" title="Yelp">circleyelp</a></li>
+				</ul>
+			</div>
+
+			<span onclick="scrollToTimeline()" class="more"></span>
+
+			<div id="popup_holder" onclick="check(event)">
+				<div id="popup_contact_form">
+					<img src="images/Close.png" id="close">
+					<!-- the form -->
+					<form action="">
+						<h1>Say Hello</h1>
+						<hr>
+						<div class="error" id="form_error"></div>
+						<input type="text" id="name" name="name" placeholder="Name">
+						<input type="text" id="email" name="email" placeholder="Email">
+						<textarea name="message" id="message" placeholder="Message"></textarea>
+						<input id="send" type="submit" name="submit" value="Send Message">
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<div class="timeline" id="timeline">
+			<ul class="line">
+				<li></li>
 			</ul>
-		</div>
+			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-		<div id="popup_holder" onclick="check(event)">
-			<div id="popup_contact_form">
-				<img src="images/Close.png" id="close">
-				<!-- the form -->
-				<form action="">
-					<h1>Say Hello</h1>
-					<hr>
-					<div class="error" id="form_error"></div>
-					<input type="text" id="name" name="name" placeholder="Name">
-					<input type="text" id="email" name="email" placeholder="Email">
-					<textarea name="message" id="message" placeholder="Message"></textarea>
-					<input id="send" type="submit" name="submit" value="Send Message">
-				</form>
+			<div class="footer">
+				<span>
+					Jian Wei Chuah &copy; 2014
+				</span>
 			</div>
 		</div>
 
-		<div class="footer">
-			<p>
-				Jian Wei Chuah &copy; 2014
-			</p>
-		</div>
+		<!-- Resize the height of the first screen -->
+		<script type="text/javascript">
+			$('.first').css({ height: $(window).innerHeight() });
+			$(window).resize(function(){
+				$('.first').css({ height: $(window).innerHeight() });
+			});
+		</script>
 
 		<!-- Code for Google Analytics -->
 		<script>
