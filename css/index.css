@@ -258,7 +258,7 @@ ul.line li:nth-child(odd) span:before {
   border-right-color: rgba(0, 0, 0, .1);
 }
 
-ul.line li a:visited {
+ul.line li a, ul.line li a:visited {
   color: inherit;
 }
 
