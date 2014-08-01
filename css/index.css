@@ -104,22 +104,22 @@ ul li {
 	text-align: center;
 }
 
-ul li a { 
+ul.social_bar li a { 
 	opacity: 0.5; 
 }
 
-ul li a:hover { 
+ul.social_bar li a:hover { 
 	opacity: 1; 
 	-webkit-transition: all 0.2s ease-in-out; 
 }
 
-a { 
+ul.social_bar a { 
 	color: #ffffff; 
 	text-decoration: none; 
 	cursor: pointer;
 }
 
-a:hover { 
+ul.social_bar a:hover { 
 	color: #ffffff; 
 	-webkit-transition: all 0.2s ease-in-out; 
 }
@@ -138,14 +138,127 @@ a:hover {
     font-size: 11px;
 }
 
+/* CSS tricks for timeline */
+
+ul.line {
+  padding: 0 40px;
+  margin: 0 auto;
+  list-style: none;
+  overflow: hidden;
+}
+
 ul.line::before {
 	position: absolute;
 	content: '';
 	width: 2px;
 	left: 50%;
 	margin-left: -1px;
-	display: inline-block;
+	display: block;
 	top: 0;
-	bottom: 80px;
+	bottom: 90px;
 	background: #ddd;
 }
+
+ul.line li {
+  clear: both;
+  display: block;
+  width: 100%;
+  position: relative;
+  margin: 40px 0;
+  height: 30px;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+ul.line li:before {
+  content: '';
+  height: 0;
+  position: absolute;
+  width: 0;
+  left: 50%;
+  margin-left: -6px;
+  top: 50%;
+  margin-top: -6px;
+  padding: 6px;
+  background: #ddd;
+  border-radius: 10px;  
+}
+
+ul.line li span {
+  margin-top: 8px;
+  border-radius: 6px;
+  background: white;
+  padding: 8px 12px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+  position: absolute;
+  top: -15px;
+  background-size: 100% 100%;
+}
+
+ul.line li:nth-child(odd) span {
+  left: 50%;
+  margin-left: 35px;
+}
+
+ul.line li:nth-child(even) span {
+  right: 50%;
+  margin-right: 35px;
+}
+
+ul.line li small {
+  text-align: right;
+  display: block;
+  line-height: 31px;
+  color: #aaa;
+}
+
+ul.line li span img {
+  vertical-align: middle;  
+  width: auto;
+  height: 25px;
+}
+
+ul.line li:nth-child(odd) small {
+  margin-right: 50%;
+  padding-right: 30px;  
+}
+
+ul.line li:nth-child(even) small {
+  text-align: left;
+  margin-left: 50%;
+  padding-left: 30px;
+}
+
+ul.line li:nth-child(even) span:before, ul.line li:nth-child(even) span:after {
+  left: 100%;
+  border-left-color: white;
+}
+
+ul.line li:nth-child(odd) span:before, ul.line li:nth-child(odd) span:after {
+  border-right-color: white;
+  right: 100%;
+}
+
+ul.line li span:before, ul.line li span:after {
+  content: ''; height: 0; position: absolute; width: 0;
+  border-color: transparent; border-style: solid;
+
+  margin-bottom: -8px;
+  bottom: 50%;
+  border-width: 8px;
+}
+
+ul.line li:nth-child(even) span:before {
+  margin-left: 1px;
+  border-left-color: rgba(0, 0, 0, .1);
+}
+
+ul.line li:nth-child(odd) span:before {
+  margin-right: 1px;
+  border-right-color: rgba(0, 0, 0, .1);
+}
+
+ul.line li a:visited {
+  color: inherit;
+}
+
