@@ -8,10 +8,7 @@ $(function() {
 			{ src: 'images/5.jpg', fade: 2000},
 			{ src: 'images/6.jpg', fade: 2000},
 			{ src: 'images/7.jpg', fade: 2000},
-			{ src: 'images/8.jpg', fade: 2000},
-			{ src: 'images/9.jpg', fade: 2000},
-			{ src: 'images/10.jpg', fade: 2000},
-			{ src: 'images/11.jpg', fade: 2000}
+			{ src: 'images/8.jpg', fade: 2000}
 		],
 		preload: true
 	});
@@ -19,7 +16,6 @@ $(function() {
 		src:'js/vegas/overlays/01.png'
 	});
 });
-$(document).ready(function() { 
-	$(".content").css("display", "none");
-	$(".content").fadeIn(2000);
+$(window).load(function() {
+	$("body").fadeIn(2000);
 });
