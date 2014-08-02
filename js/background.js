@@ -16,6 +16,3 @@ $(function() {
 		src:'js/vegas/overlays/01.png'
 	});
 });
-$(window).load(function() {
-	$("body").fadeIn(2000);
-});

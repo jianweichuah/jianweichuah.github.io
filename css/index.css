@@ -4,7 +4,6 @@ body {
 	margin: 0; 
 	background: #000000; 
   text-align: center;
-  display: none;
 }
 
 .first {
@@ -68,12 +67,10 @@ body {
 
 @font-face {
     font-family: 'Mono Social Icons Font';
-    src: url('/css/social-icons/MonoSocialIconsFont-1.10.eot');
     src: url('/css/social-icons/MonoSocialIconsFont-1.10.eot?#iefix') format('embedded-opentype'),
          url('/css/social-icons/MonoSocialIconsFont-1.10.woff') format('woff'),
          url('/css/social-icons/MonoSocialIconsFont-1.10.ttf') format('truetype'),
          url('/css/social-icons/MonoSocialIconsFont-1.10.svg#MonoSocialIconsFont') format('svg');
-    src: url('/css/social-icons/MonoSocialIconsFont-1.10.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -262,4 +259,3 @@ ul.line li:nth-child(odd) span:before {
 ul.line li a, ul.line li a:visited {
   color: inherit;
 }
-

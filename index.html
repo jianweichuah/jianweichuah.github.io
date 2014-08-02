@@ -15,8 +15,10 @@
 		<link rel="stylesheet" type="text/css" href="js/vegas/jquery.vegas.css"/>
 		<link rel="stylesheet" type="text/css" href="css/index.css"/>
 		<link rel="stylesheet" type="text/css" href="css/contactform.css"/>
+		<link rel="stylesheet" type="text/css" href="css/nprogress.css"/>
 		<link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
         <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src='js/nprogress.js'></script>
 
         <!-- Code for Google Analytics -->
 		<script>
@@ -37,139 +39,142 @@
 		<script type="text/javascript" src="js/contactform.js"></script>
 		<script type="text/javascript" src="js/index.js"></script>
 
-		<div class="first">
-			<div class="content">
-				<div class="picture">
-					<img src="images/avatar.jpg" class="avatar" alt="avatar">
-				</div>
-				<div class="name">Jian Wei Chuah</div>
-				<div class="location">
-					<img src="images/Canada.png" title="Current: Toronto, Canada">
-					<img src="images/United-States.png" title="Past: San Francisco, USA">
-					<img src="images/Germany.png" title="Past: Augsburg, Germany">
-					<img src="images/Malaysia.png" title="Past: Penang, Malaysia">
-				</div>
-				<p class="introduction">
-					Hello, nice to meet you! <br> 
-					I'm a final year Computer Engineering student at the University of Toronto, a software engineer, a creator, a learner, a geek. I love startup, web design and traveling.
-				</p>
+		<div class="page">
+			<div class="first">
+				<div class="content">
+					<div class="picture">
+						<img src="images/avatar.jpg" class="avatar" alt="avatar">
+					</div>
+					<div class="name">Jian Wei Chuah</div>
+					<div class="location">
+						<img src="images/Canada.png" title="Current: Toronto, Canada">
+						<img src="images/United-States.png" title="Past: San Francisco, USA">
+						<img src="images/Germany.png" title="Past: Augsburg, Germany">
+						<img src="images/Malaysia.png" title="Past: Penang, Malaysia">
+					</div>
+					<p class="introduction">
+						Hello, nice to meet you! <br> 
+						I'm a final year Computer Engineering student at the University of Toronto, a software engineer, a creator, a learner, a geek. I love startup, web design and traveling.
+					</p>
 
-				<!-- Social Bar -->
-				<ul class="social_bar">
-					<li><a href="docs/JianWeiChuah_Resume.pdf" class="symbol" title="Resume">circleaboutme</a></li>
-					<li><a href="https://twitter.com/jianweichuah" class="symbol" title="Twitter">circletwitterbird</a></li>
-					<li><a href="https://github.com/jianweichuah" class="symbol" title="Github">circlegithubalt</a></li>
-					<li><a href="https://www.linkedin.com/in/jianweichuah" class="symbol" title="LinkedIn">circlelinkedin</a></li>
-					<li><a id="popup" class="symbol" title="Contact Me" onclick="show_popup()">circleemail</a></li>
-					<li><a href="http://stackoverflow.com/users/1552862/jian" class="symbol" title="StackOverflow">circlestackoverflow</a></li>
-					<li><a href="http://jianweichuah.yelp.com" class="symbol" title="Yelp">circleyelp</a></li>
+					<!-- Social Bar -->
+					<ul class="social_bar">
+						<li><a href="docs/JianWeiChuah_Resume.pdf" class="symbol" title="Resume">circleaboutme</a></li>
+						<li><a href="https://twitter.com/jianweichuah" class="symbol" title="Twitter">circletwitterbird</a></li>
+						<li><a href="https://github.com/jianweichuah" class="symbol" title="Github">circlegithubalt</a></li>
+						<li><a href="https://www.linkedin.com/in/jianweichuah" class="symbol" title="LinkedIn">circlelinkedin</a></li>
+						<li><a id="popup" class="symbol" title="Contact Me" onclick="show_popup()">circleemail</a></li>
+						<li><a href="http://stackoverflow.com/users/1552862/jian" class="symbol" title="StackOverflow">circlestackoverflow</a></li>
+						<li><a href="http://jianweichuah.yelp.com" class="symbol" title="Yelp">circleyelp</a></li>
+					</ul>
+				</div>
+
+				<span onclick="scrollToTimeline()" class="more"></span>
+
+				<div id="popup_holder" onclick="check(event)">
+					<div id="popup_contact_form">
+						<img src="images/Close.png" id="close">
+						<!-- the form -->
+						<form action="">
+							<h1>Say Hello</h1>
+							<hr>
+							<div class="error" id="form_error"></div>
+							<input type="text" id="name" name="name" placeholder="Name">
+							<input type="text" id="email" name="email" placeholder="Email">
+							<textarea name="message" id="message" placeholder="Message"></textarea>
+							<input id="send" type="submit" name="submit" value="Send Message">
+						</form>
+					</div>
+				</div>
+			</div>
+
+			<div class="timeline" id="timeline">
+				<ul class="line">
+					<li>
+						<a href="http://www.angelhack.com/event/angelhack-kuala-lumpur-spring-2014/" target="_blank">
+							<span>
+								<img src="images/AngelHack.jpg" alt="AngelHack">
+								<img class="test">
+								Attended AngelHack Kuala Lumpur Hackathon
+							</span>
+						</a>
+						<small class="year">2014</small>
+					</li>
+					<li>
+						<a href="http://startupschool.org/" target="_blank">
+							<span>
+								Attended Startup School, Y Combinator
+								<img src="images/YCombinator.jpg" alt="YCombinator">
+							</span>
+						</a>
+						<small class="year">2013</small>
+					</li>
+					<li>
+						<a href="http://www.marinsoftware.com/" target="_blank">
+							<span>
+								<img src="images/MarinSoftware.jpg" alt="MarinSoftware">
+								Joined Marin Software Inc., San Francisco, USA
+							</span>
+						</a>
+						<small class="year">2013</small>
+					</li>
+					<li>
+						<span>
+							Attended Windows Phone 8 Hackathon, Toronto
+							<img src="images/Microsoft.jpg" alt="Microsoft">
+						</span>
+						<small class="year">2013</small>
+					</li>
+					<li>
+						<a href="http://www.techvibes.com/blog/legendary-nights-out-with-electric-courage-2012-04-30" target="_blank">
+							<span>
+								<img src="images/ElectricCourage.jpg" alt="ElectricCourage">
+								Joined Next Mobile Inc., Toronto, Canada
+							</span>
+						</a>
+						<small class="year">2012</small>
+					</li>
+					<li>
+						<a href="http://www.multimedia-computing.de/wiki/Home" target="_blank">
+							<span>
+								Summer Research at University of Augsburg, Germany
+								<img src="images/UofAugsburg.jpg" alt="UofAugsburg">
+							</span>
+						</a>
+						<small class="year">2012</small>
+					</li>
+					<li>
+						<a href="http://www.pentamaster.com.my/" target="_blank">
+							<span>
+								<img src="images/Pentamaster.jpg" alt="Pentamaster">
+								Joined Pentamaster Technology, Malaysia
+							</span>
+						</a>
+						<small class="year">2011</small>
+					</li>
+					<li>
+						<a href="http://www.ece.utoronto.ca/" target="_blank">
+							<span>
+								Enrolled at University of Toronto
+								<img src="images/UofT.jpg" alt="UofT">
+							</span>
+						</a>
+						<small class="year">2010</small>
+					</li>
+					<li>
+						<span>
+							<img src="images/baby.jpg" alt="baby">
+							Born
+						</span>
+						<small class="year">1991</small>
+					</li>
 				</ul>
-			</div>
 
-			<span onclick="scrollToTimeline()" class="more"></span>
-
-			<div id="popup_holder" onclick="check(event)">
-				<div id="popup_contact_form">
-					<img src="images/Close.png" id="close">
-					<!-- the form -->
-					<form action="">
-						<h1>Say Hello</h1>
-						<hr>
-						<div class="error" id="form_error"></div>
-						<input type="text" id="name" name="name" placeholder="Name">
-						<input type="text" id="email" name="email" placeholder="Email">
-						<textarea name="message" id="message" placeholder="Message"></textarea>
-						<input id="send" type="submit" name="submit" value="Send Message">
-					</form>
+				<div class="footer">
+					<span>
+						Jian Wei Chuah &copy; 2014
+					</span>
 				</div>
-			</div>
-		</div>
-
-		<div class="timeline" id="timeline">
-			<ul class="line">
-				<li>
-					<a href="http://www.angelhack.com/event/angelhack-kuala-lumpur-spring-2014/" target="_blank">
-						<span>
-							<img src="images/AngelHack.jpg" alt="AngelHack">
-							Attended AngelHack Kuala Lumpur Hackathon
-						</span>
-					</a>
-					<small class="year">2014</small>
-				</li>
-				<li>
-					<a href="http://startupschool.org/" target="_blank">
-						<span>
-							Attended Startup School, Y Combinator
-							<img src="images/YCombinator.jpg" alt="YCombinator">
-						</span>
-					</a>
-					<small class="year">2013</small>
-				</li>
-				<li>
-					<a href="http://www.marinsoftware.com/" target="_blank">
-						<span>
-							<img src="images/MarinSoftware.jpg" alt="MarinSoftware">
-							Joined Marin Software Inc., San Francisco, USA
-						</span>
-					</a>
-					<small class="year">2013</small>
-				</li>
-				<li>
-					<span>
-						Attended Windows Phone 8 Hackathon, Toronto
-						<img src="images/Microsoft.jpg" alt="Microsoft">
-					</span>
-					<small class="year">2013</small>
-				</li>
-				<li>
-					<a href="http://www.techvibes.com/blog/legendary-nights-out-with-electric-courage-2012-04-30" target="_blank">
-						<span>
-							<img src="images/ElectricCourage.jpg" alt="ElectricCourage">
-							Joined Next Mobile Inc., Toronto, Canada
-						</span>
-					</a>
-					<small class="year">2012</small>
-				</li>
-				<li>
-					<a href="http://www.multimedia-computing.de/wiki/Home" target="_blank">
-						<span>
-							Summer Research at University of Augsburg, Germany
-							<img src="images/UofAugsburg.jpg" alt="UofAugsburg">
-						</span>
-					</a>
-					<small class="year">2012</small>
-				</li>
-				<li>
-					<a href="http://www.pentamaster.com.my/" target="_blank">
-						<span>
-							<img src="images/Pentamaster.jpg" alt="Pentamaster">
-							Joined Pentamaster Technology, Malaysia
-						</span>
-					</a>
-					<small class="year">2011</small>
-				</li>
-				<li>
-					<a href="http://www.ece.utoronto.ca/" target="_blank">
-						<span>
-							Enrolled at University of Toronto
-							<img src="images/UofT.jpg" alt="UofT">
-						</span>
-					</a>
-					<small class="year">2010</small>
-				</li>
-				<li>
-					<span>
-						<img src="images/baby.jpg" alt="baby">
-						Born
-					</span>
-					<small class="year">1991</small>
-				</li>
-			</ul>
-
-			<div class="footer">
-				<span>
-					Jian Wei Chuah &copy; 2014
-				</span>
 			</div>
 		</div>
 
@@ -178,6 +183,14 @@
 			$('.first').css({ height: $(window).innerHeight() });
 			$(window).resize(function(){
 				$('.first').css({ height: $(window).innerHeight() });
+			});
+			$(document).ready(function() {
+				NProgress.start();
+				$(".page").css("display", "none");
+			});
+			$(window).load(function() {
+				NProgress.done();
+				$(".page").fadeIn(1500);
 			});
 		</script>
 	</body>
