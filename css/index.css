@@ -24,14 +24,24 @@ body {
 	box-shadow: 10px 10px 50px 0px rgba(0,0,0,0.8);
 }
 
-.more {
-	background: url('http://d4yt8xl9b7in.cloudfront.net/assets/home/scroll-trigger-small@2x-259af61c001f3cd0b3d4fcd9c2f62df0.png');
-	background-size: 26px 16px;
-	width: 26px;
-	height: 16px;
-	display: inline-block;
-	bottom: 50px;
-	cursor: pointer;
+.bounce {
+  background: url('http://d4yt8xl9b7in.cloudfront.net/assets/home/scroll-trigger-small@2x-259af61c001f3cd0b3d4fcd9c2f62df0.png');
+  background-size: 26px 16px;
+  width: 26px;
+  height: 16px;
+  cursor: pointer;
+  position:fixed;
+  bottom:20px;
+  margin-top:-25px;
+  margin-left:-25px;
+  -webkit-animation:bounce 2s infinite;
+}
+
+@-webkit-keyframes bounce {
+  0%       { bottom:20px; }
+  25%, 75% { bottom:15px; }
+  50%      { bottom:30px; }
+  100%     {bottom:20px;}
 }
 
 .picture {
