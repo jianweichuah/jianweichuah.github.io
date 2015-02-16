@@ -134,5 +134,13 @@ p {
 }
 
 .media {
+    color: #bbbbbb;
+    font-size: 50px;
+    background-color: #f1f2f7;
     text-align: center;
+    font-weight: 600;
+}
+
+.footer {
+    background-color: #f1f2f7;
 }
