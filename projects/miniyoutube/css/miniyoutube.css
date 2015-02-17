@@ -43,6 +43,11 @@ p {
     line-height: 24px;
 }
 
+.media-logo {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
 /* Video pitch and action */
 .pitch {
     padding: 2.5% 0%;
