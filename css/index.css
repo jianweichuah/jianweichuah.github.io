@@ -8,10 +8,20 @@ body {
 
 .projects hr {
   margin-top: 0px;
+  border: 0;
+  height: 1px;
+  background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+  background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+  background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+  background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
 }
 
 .caption h3 {
   margin-top: 0px;
+}
+
+.thumbnail {
+  box-shadow: 0px 0px 8px rgba(0,0,0,0.3);
 }
 
 .thumbnail .caption a>img {
@@ -26,7 +36,7 @@ body {
 }
 
 .projects {
-  background-color: #fff;
+  background-color: #ffffff;
   position: relative;
   padding-left: 5%;
   padding-right: 5%;
