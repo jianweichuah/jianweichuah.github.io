@@ -160,3 +160,24 @@ p {
     font-size: 15px;
     color: #626363;
 }
+
+.install-btn {
+    border: 0 none;
+    border-radius: 2px 2px 2px 2px;
+    color: #FFFFFF;
+    background-color: #444444;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Arial,sans-serif;
+    font-weight: bold;
+    padding: 7px 15px;
+    text-transform: none;
+    transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+    text-align: center;
+}
+
+.install-btn:hover {
+    background-color: #000000;
+}
