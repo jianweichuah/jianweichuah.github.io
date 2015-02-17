@@ -6,6 +6,11 @@ body {
   text-align: center;
 }
 
+.rating {
+    font-size: 30px;
+    color: #626363;
+}
+
 .projects hr {
   margin-top: 0px;
   border: 0;

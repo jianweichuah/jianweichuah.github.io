@@ -149,3 +149,14 @@ p {
 .footer {
     background-color: #f1f2f7;
 }
+
+.rating {
+    font-size: 50px;
+    color: #626363;
+}
+
+.rating-description {
+    font-style: italic;
+    font-size: 15px;
+    color: #626363;
+}
