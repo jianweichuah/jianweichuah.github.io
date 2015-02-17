@@ -6,9 +6,42 @@ body {
   text-align: center;
 }
 
+.caption h3 {
+  margin-top: 0px;
+}
+
+.thumbnail .caption a>img {
+  display: inline;
+  margin-left: 0px;
+  margin-right: 5px;
+}
+
+.project-logo {
+  margin-top: -15%;
+  background-color: #fff;
+}
+
+.projects {
+  background-color: #fff;
+  position: relative;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
 .first {
 	min-height: 476px;
 	overflow: auto;
+}
+
+.title {
+  color: #333333;
+  font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-rendering: optimizeLegibility;
+  font-size: 36px;
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
 
 .content {
@@ -136,7 +169,12 @@ ul.social_bar a:hover {
 	border-top: 2px solid #ddd;
 	box-shadow: inset 10px 10px 10px -10px rgba(0, 0, 0, .1);
 	padding: 25px;
+  padding-bottom: 0px;
 	position: relative;
+}
+
+.details {
+  font-size: 15px;
 }
 
 .footer {
