@@ -11,7 +11,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <link href="../../images/miniyoutube.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
-
         <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
         <link rel="stylesheet" type="text/css" href="../../css/flat-ui.css"/>
         <link rel="stylesheet" type="text/css" href="css/miniyoutube.css"/>
@@ -21,6 +20,21 @@
         <script type="text/javascript" src='../../js/nprogress.js'></script>
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
+        <!-- Preload images -->
+        <script type="text/javascript">
+        if (document.images) {
+            img1 = new Image();
+            img1.src = "../../images/miniyoutube_transition.gif";
+            img2 = new Image();
+            img2.src = "../../images/miniyoutube_drag.gif";
+            img3 = new Image();
+            img3.src = "../../images/miniyoutube_play.gif";
+            img4 = new Image();
+            img4.src = "../../images/miniyoutube_resize.gif";
+            img5 = new Image();
+            img5.src = "../../images/miniyoutube_memory.gif";
+        }
+        </script>
         <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/acphfpihfjpgnihkgelafhmjeoodbehp">
     </head>
     <body>

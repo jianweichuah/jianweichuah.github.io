@@ -181,3 +181,7 @@ p {
 .install-btn:hover {
     background-color: #000000;
 }
+
+.title {
+    font-weight: bold;
+}
