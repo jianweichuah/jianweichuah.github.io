@@ -6,6 +6,10 @@ body {
   text-align: center;
 }
 
+.projects hr {
+  margin-top: 0px;
+}
+
 .caption h3 {
   margin-top: 0px;
 }
@@ -181,6 +185,7 @@ ul.social_bar a:hover {
     color: #cccccc;
     text-align: center;
     font-size: 11px;
+    padding-bottom: 20px;
 }
 
 /* CSS tricks for timeline */
