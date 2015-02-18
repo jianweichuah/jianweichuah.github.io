@@ -19,7 +19,7 @@
         <link rel="stylesheet" type="text/css" href="../../css/nprogress.css"/>
         <script type="text/javascript" src='../../js/nprogress.js'></script>
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
+        <script type="text/javascript" src='js/miniyoutube.js'></script>
         <!-- Preload images -->
         <script type="text/javascript">
         if (document.images) {
@@ -177,16 +177,5 @@
                 <p>Made with <span style="font-size: 15px; color: red;">&hearts;</span> in Toronto by <a href="/">jianweichuah</a></p>
             </div>
         </div>
-
-        <script type="text/javascript">
-            $(document).ready(function() {
-                NProgress.start();
-                $(".features").css("display", "none");
-            });
-            $(window).load(function() {
-                NProgress.done();
-                $(".features").fadeIn(1500);
-            });
-        </script>
     </body>
 </html>
