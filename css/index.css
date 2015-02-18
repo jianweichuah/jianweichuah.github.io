@@ -6,6 +6,23 @@ body {
   text-align: center;
 }
 
+.thumbnail .project-img {
+  min-height: 177px;
+}
+
+#notenodes {
+  margin-top: 5%;
+}
+
+.achievement {
+  font-size: 20px;
+  color: #626363;
+}
+
+.caption {
+  min-height: 267px;
+}
+
 .rating {
     font-size: 30px;
     color: #626363;
@@ -44,6 +61,7 @@ body {
 .project-logo {
   margin-top: -15%;
   background-color: #fff;
+  min-height: 106px;
 }
 
 .projects {
