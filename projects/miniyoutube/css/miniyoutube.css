@@ -182,3 +182,11 @@ p {
 .title {
     font-weight: bold;
 }
+
+.twitter-tweet-button {
+    width: 85px !important;
+}
+
+.facebook-buttons {
+    width: 130px;
+}
