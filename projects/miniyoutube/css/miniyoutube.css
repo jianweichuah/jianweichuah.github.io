@@ -30,6 +30,7 @@
 body {
     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
+
 .heading, .subheading {
     font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
     text-align: center;
@@ -111,10 +112,6 @@ p {
     font-family: "futura-pt","Futura","Century Gothic";
     font-weight: 300;
     font-size: 180%;
-}
-
-.section2 {
-    background-color: #f1f2f7;
 }
 
 .description2 {
