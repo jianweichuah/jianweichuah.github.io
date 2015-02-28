@@ -184,9 +184,13 @@ p {
 }
 
 .twitter-tweet-button {
-    width: 85px !important;
+    width: 82px !important;
 }
 
 .facebook-buttons {
-    width: 130px;
+    width: 125px;
+}
+
+#___plusone_0, #___plusone_0 iframe {
+    width: 65px !important;
 }
