@@ -18,23 +18,9 @@
         <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" rel="stylesheet" type="text/css">
         <link rel="stylesheet" type="text/css" href="../../css/nprogress.css"/>
         <script type="text/javascript" src='../../js/nprogress.js'></script>
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script type="text/javascript" src='js/jquery-2.1.3.min.js'></script>
+        <script type="text/javascript" src='js/jquery.lazyload.min.js'></script>
         <script type="text/javascript" src='js/miniyoutube.js'></script>
-        <!-- Preload images -->
-        <script type="text/javascript">
-        if (document.images) {
-            img1 = new Image();
-            img1.src = "../../images/miniyoutube_transition.gif";
-            img2 = new Image();
-            img2.src = "../../images/miniyoutube_drag.gif";
-            img3 = new Image();
-            img3.src = "../../images/miniyoutube_play.gif";
-            img4 = new Image();
-            img4.src = "../../images/miniyoutube_resize.gif";
-            img5 = new Image();
-            img5.src = "../../images/miniyoutube_memory.gif";
-        }
-        </script>
         <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/acphfpihfjpgnihkgelafhmjeoodbehp">
     </head>
     <body>
@@ -54,12 +40,6 @@
                         <p class="lead">"Watch YouTube videos while you scroll to read comments."</p>
                     </div>
                 </div>
-                <div class="social-buttons">
-                    <a href="https://twitter.com/share" class="twitter-share-button" data-url="https://chrome.google.com/webstore/detail/mini-youtube/acphfpihfjpgnihkgelafhmjeoodbehp" data-text="Watch YouTube videos while you scroll to read comments with this Chrome extension!">Tweet</a>
-                    <a class="github-button" href="https://github.com/jianweichuah/miniyoutube" data-icon="octicon-star" data-count-href="/jianweichuah/miniyoutube/stargazers" data-count-api="/repos/jianweichuah/miniyoutube#stargazers_count">Star</a>
-                    <iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fchrome.google.com%2Fwebstore%2Fdetail%2Fmini-youtube%2Facphfpihfjpgnihkgelafhmjeoodbehp&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=true&amp;height=21&amp;appId=1491872824423043" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px;" allowTransparency="true" class="facebook-buttons"></iframe>
-                    <div id="google-plus-button" class="g-plusone" data-size="medium" data-href="https://chrome.google.com/webstore/detail/mini-youtube/acphfpihfjpgnihkgelafhmjeoodbehp"></div>
-                </div>
                 <span class="rating">★★★★★</span>
                 <p class="rating-description">Chrome Web Store Rating</p>
                 <button onclick="chrome.webstore.install()" class="install-btn" id="install-button">
@@ -71,7 +51,7 @@
             <div class="features">
                 <div class="row-fluid section1">
                     <div class="span5 offset1 asset">
-                        <img class="img-polaroid" src="../../images/miniyoutube_transition.gif">
+                        <img class="img-polaroid" data-original="../../images/miniyoutube_transition.gif">
                     </div>
                     <div class="span5 copy">
                         <div class="description">
@@ -86,7 +66,7 @@
                         </div>
                     </div>
                 </div>
-
+                <hr>
                 <div class="row-fluid section2">
                     <div class="span5 offset1 copy copy-right">
                          <div class="description">
@@ -100,13 +80,13 @@
                         </div>
                     </div>
                     <div class="span5 asset">
-                        <img class="img-polaroid img-right" src="../../images/miniyoutube_drag.gif">
+                        <img class="img-polaroid img-right" data-original="../../images/miniyoutube_drag.gif">
                     </div>
                 </div>
-
+                <hr>
                 <div class="row-fluid section1">
                     <div class="span5 offset1 asset">
-                        <img class="img-polaroid img-left" src="../../images/miniyoutube_play.gif">
+                        <img class="img-polaroid img-left" data-original="../../images/miniyoutube_play.gif">
                     </div>
                     <div class="span5 copy">
                         <div class="description">
@@ -120,7 +100,7 @@
                         </div>
                     </div>
                 </div>
-
+                <hr>
                 <div class="row-fluid section2">
                     <div class="span5 offset1 copy copy-right">
                         <div class="description">
@@ -134,13 +114,13 @@
                         </div>
                     </div>
                     <div class="span5 asset">
-                        <img class="img-polaroid img-right" src="../../images/miniyoutube_resize.gif">
+                        <img class="img-polaroid img-right" data-original="../../images/miniyoutube_resize.gif">
                     </div>
                 </div>
-
+                <hr>
                 <div class="row-fluid section1">
                     <div class="span5 offset1 asset">
-                        <img class="img-polaroid img-left" src="../../images/miniyoutube_memory.gif">
+                        <img class="img-polaroid img-left" data-original="../../images/miniyoutube_memory.gif">
                     </div>
                     <div class="span5 copy">
                         <div class="description">
@@ -156,7 +136,6 @@
                 </div>
 
                 <div class="download">
-                    <h2>Free!</h2>
                     <button onclick="chrome.webstore.install()" class="install-btn btn-large" id="install-button">
                         Add to <img src="../../images/chrome.png" width="20px" style="vertical-align: middle;"/>  Now
                     </button>
@@ -195,6 +174,12 @@
         <div class="row-fluid footer">
             <div class="span12">
                 <br/>
+                <div class="social-buttons">
+                    <a href="https://twitter.com/share" class="twitter-share-button" data-url="https://chrome.google.com/webstore/detail/mini-youtube/acphfpihfjpgnihkgelafhmjeoodbehp" data-text="Watch YouTube videos while you scroll to read comments with this Chrome extension!">Tweet</a>
+                    <a class="github-button" href="https://github.com/jianweichuah/miniyoutube" data-icon="octicon-star" data-count-href="/jianweichuah/miniyoutube/stargazers" data-count-api="/repos/jianweichuah/miniyoutube#stargazers_count">Star</a>
+                    <iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fchrome.google.com%2Fwebstore%2Fdetail%2Fmini-youtube%2Facphfpihfjpgnihkgelafhmjeoodbehp&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=true&amp;height=21&amp;appId=1491872824423043" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px;" allowTransparency="true" class="facebook-buttons"></iframe>
+                    <div id="google-plus-button" class="g-plusone" data-size="medium" data-href="https://chrome.google.com/webstore/detail/mini-youtube/acphfpihfjpgnihkgelafhmjeoodbehp"></div>
+                </div>
                 <p>Made with <span style="font-size: 15px; color: red;">&hearts;</span> in Toronto by <a href="/">jianweichuah</a></p>
             </div>
         </div>
