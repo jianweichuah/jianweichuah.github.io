@@ -160,24 +160,33 @@ p {
 }
 
 .install-btn {
-    border: 0 none;
-    border-radius: 2px 2px 2px 2px;
-    color: #FFFFFF;
-    background-color: #444444;
-    cursor: pointer;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #333;
+    background-color: #fff;
     display: inline-block;
-    font-family: Arial,sans-serif;
-    font-weight: bold;
-    padding: 7px 15px;
-    text-transform: none;
-    transition: all 0.3s ease 0s;
-    -moz-transition: all 0.3s ease 0s;
-    -webkit-transition: all 0.3s ease 0s;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
     text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.install-btn:focus {
+    outline: none;
 }
 
 .install-btn:hover {
-    background-color: #000000;
+    background-color: #E0E0E0;
 }
 
 .title {
