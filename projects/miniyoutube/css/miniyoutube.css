@@ -237,3 +237,19 @@ hr {
   background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.30), rgba(0,0,0,0)); 
   background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.30), rgba(0,0,0,0)); 
 }
+
+.embedhunt-embeddable {
+  display: block;
+  text-align: left;
+  width: 70%;
+  margin-left: 15%;
+}
+
+.embedhunt-embeddable img {
+  opacity: 1;
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  -o-filter: grayscale(0%);
+  -ms-filter: grayscale(0%);
+  filter: grayscale(0%); 
+}
