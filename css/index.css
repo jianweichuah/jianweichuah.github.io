@@ -6,6 +6,10 @@ body {
   text-align: center;
 }
 
+#particles-js {
+  background-color: #b61924;
+}
+
 .thumbnail .project-img {
   min-height: 177px;
 }
@@ -88,13 +92,17 @@ body {
 }
 
 .content {
-	max-width: 480px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 440px;
+  height: 426px;
+  margin: -220px 0 0 -220px;
 	padding: 0px 20px;
 	display: block;
-	margin: 5% auto 4%;
 	border: 1px solid #000000;
 	border-radius: 20px;
-	background-color: rgba(0,0,0,0.3);
+	background-color: rgba(0,0,0,0.2);
 	text-align: center;
 	vertical-align: center;
 	box-shadow: 10px 10px 50px 0px rgba(0,0,0,0.8);
