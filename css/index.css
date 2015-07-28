@@ -3,6 +3,7 @@ body {
 	margin: 0; 
 	background: #000000; 
   text-align: center;
+  min-width: 1185px;
 }
 
 #particles-js {
