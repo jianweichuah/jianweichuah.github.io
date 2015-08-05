@@ -8,6 +8,7 @@ body {
 
 #particles-js {
   background-color: #b61924;
+  position: relative;
 }
 
 .thumbnail .project-img {
