@@ -2,7 +2,6 @@ body {
 	padding: 0; 
 	margin: 0; 
 	background: #000000; 
-  text-align: center;
   min-width: 1185px;
 }
 
@@ -76,6 +75,7 @@ body {
   position: relative;
   padding-left: 5%;
   padding-right: 5%;
+  text-align: center;
 }
 
 .first {

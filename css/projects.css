@@ -1,0 +1,81 @@
+.thumbnail .project-img {
+  min-height: 177px;
+}
+
+#notenodes {
+  margin-top: 5%;
+}
+
+.achievement {
+  font-size: 20px;
+  color: #626363;
+}
+
+.caption {
+  min-height: 267px;
+}
+
+.rating {
+    font-size: 30px;
+    color: #f4d03f;
+}
+
+.rating-description {
+    font-style: italic;
+    font-size: 12px;
+    color: #626363;
+}
+
+.projects hr {
+  width: 90%;
+  margin-top: 0px;
+  margin-left: 5%;
+  border: 0;
+  height: 1px;
+  background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+  background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+  background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+  background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+}
+
+.caption h3 {
+  margin-top: 0px;
+}
+
+.thumbnail {
+  box-shadow: 0px 0px 8px rgba(0,0,0,0.3);
+}
+
+.thumbnail .caption a>img {
+  display: inline;
+  margin-left: 0px;
+  margin-right: 5px;
+}
+
+.project-logo {
+  margin-top: -15%;
+  background-color: #fff;
+  min-height: 106px;
+}
+
+.projects {
+  background-color: #ffffff;
+  position: relative;
+  text-align: center;
+}
+
+.title {
+  font: 400 100px/1.2 'Merienda One', Helvetica, sans-serif;
+  color: rgba(0,0,0,0.7);
+  text-shadow: 3px 3px 3px #fff;
+  font-size: 36px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.footer {
+  color: #cccccc;
+  text-align: center;
+  font-size: 11px;
+  padding-bottom: 20px;
+}

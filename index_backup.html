@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jian Wei Chuah</title>
+
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta name="description" content="Jian Wei Chuah's personal site. A software engineer, coder, geek. Current Amazonian">
+        <meta name="keywords" content="jianweichuah, Jian Wei Chuah, Software Developer, Software Engineer">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Jian Wei Chuah">
+        <meta name="robots" content="index, follow">
+
+        <link href="images/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+
+        <link rel="stylesheet" type="text/css" href="css/index.css"/>
+        <link rel="stylesheet" type="text/css" href="css/contactform.css"/>
+        <link rel="stylesheet" type="text/css" href="css/nprogress.css"/>
+        <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+
+        <script type="text/javascript" src='js/nprogress.js'></script>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/modernizr.js"></script> <!-- Modernizr -->
+
+        <!-- Code for Google Analytics -->
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+              ga('create', 'UA-53269478-1', 'auto');
+              ga('send', 'pageview');
+        </script>
+        <script>
+          (function(){
+            var handle = '@jianweichuah';
+            var a = document.createElement('script');
+            var m = document.getElementsByTagName('script')[0];
+            a.async = 1;
+            a.src = 'https://nectar.ninja/api/v1/' + handle.slice(1);
+            m.parentNode.insertBefore(a, m);
+          })();
+        </script>
+    </head>
+    <body>
+        <!-- include javascripts needed -->
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script type="text/javascript" src="js/contactform.js"></script>
+
+        <div id="particles-js">
+            <div class="content">
+                <div class="picture">
+                    <img src="images/avatar.jpg" class="avatar" alt="avatar">
+                </div>
+                <div class="name">Jian Wei Chuah</div>
+                <div class="location">
+                    <img src="images/Canada.png" title="Current: Toronto, Canada">
+                    <img src="images/United-States.png" title="Past: San Francisco, USA">
+                    <img src="images/Germany.png" title="Past: Augsburg, Germany">
+                    <img src="images/Malaysia.png" title="Past: Penang, Malaysia">
+                </div>
+                <span class="introduction">
+                    <p>Hello, nice to meet you!</p>
+                    <p>I'm a software engineer currently working at Amazon.</p>
+                </span>
+
+                <!-- Social Bar -->
+                <ul class="social_bar">
+                    <li><a href="docs/JianWeiChuah_Resume.pdf" class="symbol" title="Resume">circleaboutme</a></li>
+                    <li><a href="https://twitter.com/jianweichuah" class="symbol" title="Twitter">circletwitterbird</a></li>
+                    <li><a href="https://github.com/jianweichuah" class="symbol" title="Github">circlegithubalt</a></li>
+                    <li><a href="https://www.linkedin.com/in/jianweichuah" class="symbol" title="LinkedIn">circlelinkedin</a></li>
+                    <li><a id="popup" class="symbol" title="Contact Me" onclick="show_popup()">circleemail</a></li>
+                    <li><a href="http://stackoverflow.com/users/1552862/jian" class="symbol" title="StackOverflow">circlestackoverflow</a></li>
+                    <li><a href="http://jianweichuah.yelp.com" class="symbol" title="Yelp">circleyelp</a></li>
+                </ul>
+            </div>
+        </div>
+        <script type="text/javascript" src='js/particles.js'></script>
+        <script type="text/javascript" src="js/index.js"></script>
+
+        <div class="page">
+            <span onclick="scrollToTimeline()" class="bounce"></span>
+
+            <div id="popup_holder" onclick="check(event)">
+                <div id="popup_contact_form">
+                    <img src="images/Close.png" id="close">
+                    <!-- the form -->
+                    <form action="">
+                        <h1>Say Hello</h1>
+                        <hr>
+                        <div class="error" id="form_error"></div>
+                        <input type="text" id="name" name="name" placeholder="Name">
+                        <input type="text" id="email" name="email" placeholder="Email">
+                        <textarea name="message" id="message" placeholder="Message"></textarea>
+                        <input id="send" type="submit" name="submit" value="Send Message">
+                    </form>
+                </div>
+            </div>
+
+            <section id="cd-timeline" class="cd-container">
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-picture">
+                        <img src="images/baby.jpg" alt="Picture">
+                    </div> <!-- cd-timeline-img -->
+
+                    <div class="cd-timeline-content">
+                        <span style="display: block;">Born</span>
+                        <span class="cd-date">1991</span>
+                    </div> <!-- cd-timeline-content -->
+                </div> <!-- cd-timeline-block -->
+
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-movie">
+                        <img src="images/UofT.jpg" alt="UofT">
+                    </div> <!-- cd-timeline-img -->
+
+                    <div class="cd-timeline-content">
+                        <span style="display: block;">Enrolled at University of Toronto</span>
+                        <span class="cd-date">2010</span>
+                    </div> <!-- cd-timeline-content -->
+                </div> <!-- cd-timeline-block -->
+
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-picture">
+                        <img src="img/cd-icon-picture.svg" alt="Picture">
+                    </div> <!-- cd-timeline-img -->
+
+                    <div class="cd-timeline-content">
+                        <h2>Title of section 3</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, obcaecati, quisquam id molestias eaque asperiores voluptatibus cupiditate error assumenda delectus odit similique earum voluptatem doloremque dolorem ipsam quae rerum quis. Odit, itaque, deserunt corporis vero ipsum nisi eius odio natus ullam provident pariatur temporibus quia eos repellat consequuntur perferendis enim amet quae quasi repudiandae sed quod veniam dolore possimus rem voluptatum eveniet eligendi quis fugiat aliquam sunt similique aut adipisci.</p>
+                        <a href="#0" class="cd-read-more">Read more</a>
+                        <span class="cd-date">Jan 24</span>
+                    </div> <!-- cd-timeline-content -->
+                </div> <!-- cd-timeline-block -->
+
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-location">
+                        <img src="img/cd-icon-location.svg" alt="Location">
+                    </div> <!-- cd-timeline-img -->
+
+                    <div class="cd-timeline-content">
+                        <h2>Title of section 4</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
+                        <a href="#0" class="cd-read-more">Read more</a>
+                        <span class="cd-date">Feb 14</span>
+                    </div> <!-- cd-timeline-content -->
+                </div> <!-- cd-timeline-block -->
+
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-location">
+                        <img src="img/cd-icon-location.svg" alt="Location">
+                    </div> <!-- cd-timeline-img -->
+
+                    <div class="cd-timeline-content">
+                        <h2>Title of section 5</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum.</p>
+                        <a href="#0" class="cd-read-more">Read more</a>
+                        <span class="cd-date">Feb 18</span>
+                    </div> <!-- cd-timeline-content -->
+                </div> <!-- cd-timeline-block -->
+
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-movie">
+                        <img src="img/cd-icon-movie.svg" alt="Movie">
+                    </div> <!-- cd-timeline-img -->
+
+                    <div class="cd-timeline-content">
+                        <h2>Final Section</h2>
+                        <p>This is the content of the last section</p>
+                        <span class="cd-date">Feb 26</span>
+                    </div> <!-- cd-timeline-content -->
+                </div> <!-- cd-timeline-block -->
+            </section> <!-- cd-timeline -->
+
+
+
+
+            <div class="timeline" id="timeline">
+                <ul class="line">
+                    <li>
+                        <a href="http://www.amazon.com/" target="_blank">
+                            <span class="details">
+                                <img src="images/amazon.png" alt="Amazon">
+                                Started working at Amazon.com
+                            </span>
+                        </a>
+                        <small class="year">2015</small>
+                    </li>
+                    <li>
+                        <a href="http://www.ece.utoronto.ca/" target="_blank">
+                            <span class="details">
+                                Graduated from UofT with high honours
+                                <img src="images/UofT.jpg" alt="UofT">
+                            </span>
+                        </a>
+                        <small class="year">2015</small>
+                    </li>
+                    <li>
+                        <a href="https://uofthacks.com/" target="_blank">
+                            <span class="details">
+                                <img src="images/UofTHacks.png" alt="UofTHacks">
+                                Top 5 finalists at UofTHacks Hackathon
+                            </span>
+                        </a>
+                        <small class="year">2015</small>
+                    </li>
+                    <li>
+                        <a href="http://www.angelhack.com" target="_blank">
+                            <span class="details">
+                                Top 5 finalists at AngelHack Kuala Lumpur Hackathon
+                                <img src="images/AngelHack.jpg" alt="AngelHack">
+                            </span>
+                        </a>
+                        <small class="year">2014</small>
+                    </li>
+                    <li>
+                        <a href="http://startupschool.org/" target="_blank">
+                            <span class="details">
+                                <img src="images/YCombinator.jpg" alt="YCombinator">
+                                Attended Startup School, Y Combinator
+                            </span>
+                        </a>
+                        <small class="year">2013</small>
+                    </li>
+                    <li>
+                        <a href="http://www.marinsoftware.com/" target="_blank">
+                            <span class="details">
+                                Joined Marin Software Inc., San Francisco, USA
+                                <img src="images/MarinSoftware.jpg" alt="MarinSoftware">
+                            </span>
+                        </a>
+                        <small class="year">2013</small>
+                    </li>
+                    <li>
+                        <span class="details">
+                            <img src="images/Microsoft.jpg" alt="Microsoft">
+                            Co-Organized Windows Phone 8 Hackathon, Toronto
+                        </span>
+                        <small class="year">2013</small>
+                    </li>
+                    <li>
+                        <a href="http://www.techvibes.com/blog/legendary-nights-out-with-electric-courage-2012-04-30" target="_blank">
+                            <span class="details">
+                                Interned at Next Mobile Inc., Toronto, Canada
+                                <img src="images/ElectricCourage.jpg" alt="ElectricCourage">
+                            </span>
+                        </a>
+                        <small class="year">2012</small>
+                    </li>
+                    <li>
+                        <a href="http://www.multimedia-computing.de/wiki/Home" target="_blank">
+                            <span class="details">
+                                <img src="images/UofAugsburg.jpg" alt="UofAugsburg">
+                                Summer Research at University of Augsburg, Germany
+                            </span>
+                        </a>
+                        <small class="year">2012</small>
+                    </li>
+                    <li>
+                        <a href="http://www.pentamaster.com.my/" target="_blank">
+                            <span class="details">
+                                Interned at Pentamaster Technology, Malaysia
+                                <img src="images/Pentamaster.jpg" alt="Pentamaster">
+                            </span>
+                        </a>
+                        <small class="year">2011</small>
+                    </li>
+                    <li>
+                        <a href="http://www.ece.utoronto.ca/" target="_blank">
+                            <span class="details">
+                                <img src="images/UofT.jpg" alt="UofT">
+                                Enrolled at University of Toronto
+                            </span>
+                        </a>
+                        <small class="year">2010</small>
+                    </li>
+                    <li>
+                        <span class="details">
+                            Born
+                            <img src="images/baby.jpg" alt="baby">
+                        </span>
+                        <small class="year">1991</small>
+                    </li>
+                    <br/><br/>
+                </ul>
+            </div>
+
+            <div class="projects">
+                <div class="title">
+                    Projects
+                </div>
+                <hr align="center">
+
+                <div class="row">
+                  <div class="col-lg-4 col-md-6 col-sm-8">
+                    <div class="thumbnail">
+                      <img class="project-img" src="images/miniyoutube_screenshot.png" alt="Mini YouTube">
+                      <div class="project-logo">
+                          <img src="images/miniyoutube_logo.png" width="30%"/>
+                      </div>
+                      <div class="caption">
+                        <h3>Mini YouTube</h3>
+                        <span class="rating">★★★★★</span>
+                        <p class="rating-description">Chrome Web Store Rating</p>
+                        <p>A Chrome Extension that lets you watch YouTube video while you scroll to read comments.</p>
+                        <p>
+                            <span class="badge">jQuery</span>
+                            <span class="badge">JavaScript</span>
+                            <span class="badge">Chrome Extension</span>
+                            <span class="badge">CSS3</span>
+                            <span class="badge">HTML5</span>
+                        </p>
+                        <p>
+                            <a href="/projects/miniyoutube" class="btn btn-default" role="button">
+                                <img src="images/view-icon.png" width="16px"/>View Project
+                            </a>
+                            <a href="https://github.com/jianweichuah/miniyoutube" class="btn btn-default" role="button">
+                                <img src="images/github-icon.png" width="16px"/>View Code
+                            </a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4 col-md-6 col-sm-8">
+                    <div class="thumbnail">
+                      <img class="project-img" src="images/notenodes_screenshot.png" alt="NoteNodes">
+                      <div class="project-logo">
+                          <img id="notenodes" src="images/UofTHacks2.png" width="20%"/>
+                      </div>
+                      <div class="caption">
+                        <h3 style="margin-bottom: 6%;">NoteNodes</h3>
+                        <span class="achievement">Top 5 finalists @ UofTHacks</span>
+                        <p class="rating-description"></p>
+                        <br/>
+                        <p>A collaborative note-taking web app that allows users to take notes while watching YouTube videos.</p>
+                        <p>
+                            <span class="badge">Django</span>
+                            <span class="badge">Python</span>
+                            <span class="badge">Heroku</span>
+                            <span class="badge">JavaScript</span>
+                            <span class="badge">VideoJS</span>
+                            <span class="badge">VelocityJS</span>
+                            <span class="badge">HTML5</span>
+                            <span class="badge">CSS3</span>
+                            <span class="badge">PostgreSQL</span>
+                        </p>
+                        <p>
+                            <a href="https://notenodes.herokuapp.com/" class="btn btn-default" role="button">
+                                <img src="images/view-icon.png" width="16px"/>View Project
+                            </a>
+                            <a href="https://github.com/AndyF/notenodes" class="btn btn-default" role="button">
+                                <img src="images/github-icon.png" width="16px"/>View Code
+                            </a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4 col-md-6 col-sm-8">
+                    <div class="thumbnail">
+                      <img class="project-img" src="images/minifacebook_screenshot.png" alt="Mini Facebook">
+                      <div class="project-logo">
+                          <img src="images/minifacebook_logo.png" width="30%"/>
+                      </div>
+                      <div class="caption">
+                        <h3>Mini Facebook</h3>
+                        <span class="rating">★★★★★</span>
+                        <p class="rating-description">Chrome Web Store Rating</p>
+                        <p>A Chrome Extension that lets you watch videos while you scroll through Facebook.</p>
+                        <p>
+                            <span class="badge">jQuery</span>
+                            <span class="badge">JavaScript</span>
+                            <span class="badge">Chrome Extension</span>
+                            <span class="badge">CSS3</span>
+                            <span class="badge">HTML5</span>
+                        </p>
+                        <p>
+                            <a href="/projects/minifacebook" class="btn btn-default" role="button">
+                                <img src="images/view-icon.png" width="16px"/>View Project
+                            </a>
+                            <a href="https://chrome.google.com/webstore/detail/mini-facebook/ojfhdmbkbfeblfemipgndpbnofhhpmgd" class="btn btn-default" role="button">
+                                <img src="images/github-icon.png" width="16px"/>View Code
+                            </a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="footer">
+                    <span>
+                        Jian Wei Chuah &copy; 2015
+                    </span>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
