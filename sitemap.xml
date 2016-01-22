@@ -3,13 +3,17 @@
     <url>
         <loc>http://www.jianweichuah.com/</loc>
     </url>
-    
+
     <url>
         <loc>http://www.jianweichuah.com/docs/JianWeiChuah_Resume.pdf</loc>
     </url>
 
     <url>
-        <loc>http://www.jianweichuah.com/projects/miniyoutube/</loc>
+        <loc>http://www.jianweichuah.com/miniyoutube/</loc>
     </url>
-    
+
+    <url>
+        <loc>http://www.jianweichuah.com/showcase/</loc>
+    </url>
+
 </urlset>
